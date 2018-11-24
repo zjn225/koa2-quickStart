@@ -4,6 +4,9 @@ const router = new Router({
   prefix: ''    //前缀
 })
 
+
+// 需要连接数据库取消注释
+/*
 const {
   getUsers
 } = require('../model/basic')
@@ -14,6 +17,8 @@ router.get('/', async (ctx, next) => {
     users
   }
 })
+
+*/
 
 router.get('/user/:id', async (ctx, next) => {
   let id = ctx.params.id   //拿到路由参数
