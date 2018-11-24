@@ -4,7 +4,7 @@ const router = new Router({
   prefix: '/other'    //前缀
 })
 
-router.prefix('/users')
+// router.prefix('/users')
 
 router.get('/', function (ctx, next) {
   ctx.body = 'this is a users response!'
